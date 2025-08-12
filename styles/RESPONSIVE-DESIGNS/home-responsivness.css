@@ -1,0 +1,167 @@
+@media (max-width: 600px) {
+  .logo {
+    margin-left: 0;
+    width: 220px;
+    white-space: nowrap;
+    padding: 5px;
+    padding-left: 0;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  .logo i {
+    margin-top: -0.5rem;
+    margin-left: 3.2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .bn {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+    padding: 3px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 899px) {
+  .bn {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    margin-left: -20px;
+  }
+
+  .ham {
+    padding: 4px;
+    margin-top: 0.4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .logo {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+
+  .logo i {
+    margin-top: -0.7rem;
+    margin-left: 3rem;
+  }
+
+  .logo img {
+    margin-left: -0.8rem;
+  }
+
+  .ny {
+    display: none;
+  }
+
+  .bn {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+    margin-left: -1rem;
+    padding: 6px;
+    margin-top: 0.4rem;
+  }
+}
+
+@media (min-width: 1101px) {
+  .logo {
+    margin-right: -0.5rem;
+    width: 225px;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+
+  .ny {
+    display: block;
+  }
+
+  .bn {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .ham {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 20px;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content span {
+    font-size: 30px;
+    white-space: nowrap;
+    display: flex;
+  }
+}
+
+@media (max-width: 551px) {
+  .hero-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 20px;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .nny {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 688px) {
+  .hero-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 20px;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .highlight {
+    font-size: 50px;
+  }
+}

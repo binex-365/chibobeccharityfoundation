@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Chibobec Charity Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/RESPONSIVE-DESIGNS/cnt-responsiveness.css">
+    <link rel="icon" href="images/log.png">
+  </head>
+  <body>
+  <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="chi">
+          <div class="logo">
+            <img src='images/log.png'>
+            CHIBOBEC <i>Charity Foundation</i>
+          </div>
+        </a>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="no">Home</a></li>
+            <li>
+              <a href="about-us.html" class="no">
+                <span>About Us</span>
+              </a>
+            </li>
+            <li><a href="mission.html" class="no">Mission</a></li>
+            <li><a href="programs.html" class=" no">Programs</a></li>
+            <li><a href="contact.html" class="active"><span class="ac">Contact</span></a></a></li>
+          </ul>
+        </nav>
+        <a href= "donate.html" class="nav-donate-btn bn">Donate Now</a>
+
+        <div class="ham-div">
+          <img src="images/ham.png" alt="" class="ham">
+        </div>
+      </div>
+    </header>
+
+    <div class="side-bar">
+      <span class="cancel" id="can">&times;</span>
+      <ul class="nav-link">
+        <li class="li"><a href="about-Us.html" >About Us</a></li>
+        <li class="lin"><a href="mission.html" >Mission</a></li>
+        <li class="lik"><a href="programs.html" >Programs</a></li>
+        <li class="link"><a href="contact.html" >Contact</a></li>
+      </ul>
+      <a href="donate.html" class="donate-btn">Donate Now</a>
+    </div>
+
+    <section class="contact-hero">
+      <div class="contact-hero-bg"></div>
+      <div class="contact-hero-content">
+        <img src="images/cont.jpeg" alt="Contact Illustration" class="contact-demo-img">
+        <h1>
+          <span class="multi-lang">
+            <span>Hello!</span>
+            <span>Bonjour!</span>
+            <span>¡Hola!</span>
+            <span>مرحبًا!</span>
+            <span>你好!</span>
+          </span>
+          <br>
+          <span class="main-title">Get in Touch</span>
+        </h1>
+        <p>
+          We’d love to hear from you. Reach out for support, partnership, or to join our mission!
+        </p>
+        <img src='images/cnt.jpeg' class="demo-img">
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-details-card">
+        <h2>Contact Details</h2>
+        <ul>
+          <li><b>Email:</b> <a href="mailto:info@chibobecfoundation.org">info@chibobecfoundation.org</a></li>
+          <li><b>Phone:</b> <a href="tel:+2341234567890">+234 123 456 7890</a></li>
+          <li><b>WhatsApp:</b> <a href="https://wa.me/2341234567890" target="_blank">+234 123 456 7890</a></li>
+          <li><b>Address:</b> 123 Charity Avenue, Lagos, Nigeria</li>
+        </ul>
+        <div class="social-links">
+          <a href="#" title="Facebook"><img src="images/face.jpeg" alt="Facebook"></a>
+          <a href="#" title="Instagram"><img src="images/in.jpeg" alt="Instagram"></a>
+          <a href="#" title="Twitter"><img src="images/twi.png" alt="Twitter"></a>
+        </div>
+        <div class="contact-pic">
+          <img src="" alt="Our Team">
+          <span>Meet our friendly team!</span>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" autocomplete="off">
+        <h2>Send Us a Message</h2>
+        <div class="form-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required placeholder="Your Name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Email">
+        </div>
+        <div class="form-row">
+          <label for="subject">
+            <div class="flx">
+              <span class="subject-info" tabindex="0">
+              <img src="images/spons.png" class="de-img">
+              <span class="subject-tooltip">
+                <img src="images/spo.png" alt="Subject Example" class="dem-img">
+            </div>
+            <br>
+                <b>Subject</b> <span class="ht">
+                  means the main reason for your message.<br>
+                  <i>Example: "Sponsorship", "Request for Help", "Feedback", etc.</i>
+                </span> 
+              </span>
+            </span>
+          </label>
+          <input type="text" id="subject" name="subject" required placeholder="e.g. Sponsorship, Feedback, Request...">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+        </div>
+        <button type="submit" class="send-btn">
+          <span>Send Message</span>
+        </button>
+        <div class="sent-success" id="sentSuccess">
+          <div class="checkmark">
+            <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none"/><path d="M14 27l7 7 17-17"/></svg>
+          </div>
+          <div class="sent-text">Message sent!</div>
+          <div class="sent-details" id="sentDetails"></div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      &copy; 2025 Chibobec Charity Foundation. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("YOUR_REAL_PUBLIC_KEY"); // Replace with your real EmailJS public key
+      })();
+
+      // Multi-language greeting animation
+      const langSpans = document.querySelectorAll('.multi-lang span');
+      let langIdx = 0;
+      setInterval(() => {
+        langSpans.forEach((el, i) => el.style.display = i === langIdx ? 'inline' : 'none');
+        langIdx = (langIdx + 1) % langSpans.length;
+      }, 1400);
+
+      // Contact form logic with EmailJS
+      const form = document.getElementById('contactForm');
+      const sentSuccess = document.getElementById('sentSuccess');
+      const sentDetails = document.getElementById('sentDetails');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get values from the form
+        const name = form.fullName.value;
+        const email = form.email.value;
+        const subject = form.subject.value;
+        const message = form.message.value;
+
+        emailjs.sendForm('YOUR_REAL_SERVICE_ID', 'YOUR_REAL_TEMPLATE_ID', this)
+          .then(function() {
+            sentDetails.innerHTML = `
+              <div><b>Full Name:</b> ${name}</div>
+              <div><b>Email:</b> ${email}</div>
+              <div><b>Subject:</b> ${subject}</div>
+              <div><b>Message:</b> ${message}</div>
+            `;
+            document.querySelector('.sent-text').textContent = "Message sent successfully!";
+            sentSuccess.classList.add('show');
+            form.classList.add('sent');
+            setTimeout(() => {
+              sentSuccess.classList.remove('show');
+              form.classList.remove('sent');
+              form.reset();
+            }, 5000);
+          }, function(error) {
+            sentDetails.innerHTML = `<div style="color:#c00;">Failed to send message. Please try again later.</div>`;
+            document.querySelector('.sent-text').textContent = "Failed to send message!";
+            sentSuccess.classList.add('show');
+            form.classList.add('sent');
+            setTimeout(() => {
+              sentSuccess.classList.remove('show');
+              form.classList.remove('sent');
+            }, 5000);
+          });
+      });
+    </script>
+    <script type="module" src="script/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Donate | Chibobec Charity Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/donate.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/RESPONSIVE-DESIGNS/dnt-responsiveness.css">
+    <link rel="icon" href="images/log.png">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="chi">
+          <div class="logo">
+            <img src='images/log.png'>
+            CHIBOBEC <i>Charity Foundation</i>
+          </div>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="no">Home</a></li>
+            <li><a href="about-Us.html" class="no">About Us</a></li>
+            <li><a href="mission.html" class="no">Mission</a></li>
+            <li><a href="programs.html" class="no">Programs</a></li>
+            <li><a href="contact.html" class="no">Contact</a></li>
+          </ul>
+        </nav>
+        <a href= "donate.html" class="nav-donate-btn bn">Donate Now</a>
+
+        <div class="ham-div">
+          <img src="images/ham.png" alt="" class="ham">
+        </div>
+      </div>
+    </header>
+
+    <div class="side-bar">
+      <span class="cancel" id="can">&times;</span>
+      <ul class="nav-link">
+        <li class="li"><a href="about-Us.html" >About Us</a></li>
+        <li class="lin"><a href="mission.html" >Mission</a></li>
+        <li class="lik"><a href="programs.html" >Programs</a></li>
+        <li class="link"><a href="contact.html" >Contact</a></li>
+      </ul>
+      <a href="donate.html" class="donate-btn">Donate Now</a>
+    </div>
+    
+    <section class="hero">
+      <div class="hero-content"> 
+        <h1>Make a Difference</h1>
+        <p>Every donation brings hope. Join us in changing lives today.</p>
+      </div>
+    </section>
+
+    <main class="donate-main">
+      <div class="donate-glass">
+        <div class="donate-card-visual" id="creditCardAnim">
+          <div class="cc-front">
+            <div class="cc-chip"></div>
+            <div class="cc-number" id="ccNumber">0004 2763 2130 6645</div>
+            <div class="cc-details">
+              <span>
+                <span class="cc-label">Card Holder</span>
+                <span class="cc-value" id="ccName">YOUR NAME</span>
+              </span>
+              <span>
+                <span class="cc-label">Expires</span>
+                <span class="cc-value" id="ccExpiry">MM/YY</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <form id="paystackForm" class="donate-form">
+          <div class="form-group">
+            <label for="donorName">Full Name</label>
+            <input type="text" id="donorName" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="donorEmail">Email Address</label>
+            <input type="email" id="donorEmail" required placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount (₦)</label>
+            <input type="number" id="amount" min="100" required placeholder="Enter amount">
+          </div>
+          <button type="submit" class="pay-btn">Donate Now</button>
+        </form>
+        <div class="sent-success" id="sentSuccess">
+          <div class="checkmark">
+            <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none"/><path d="M14 27l7 7 17-17"/></svg>
+          </div>
+          <div class="sent-text">Thank you! Payment successful.</div>
+        </div>
+      </div>
+      <aside class="donate-alt-glass">
+        <h3>Bank Transfer</h3>
+        <div class="bank-card">
+          <img src="images/gt.jpeg" alt="GTBank Logo" class="bank-logo">
+          <div class="lny">
+            <div><b>Bank:</b> Guaranty Trust Bank (GTBank)</div>
+            <div><b>Account Name:</b> Chibobec Charity Foundation</div>
+            <div><b>Account Number:</b> <span class="account-number" id="accountNumber">0123456789</span>
+              <button class="copy-btn" onclick="copyAccountNumber()" title="Copy to clipboard">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="8" height="8" rx="2"/><path d="M15 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/></svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+            <div><b>Reference:</b> Donation - [Your Name]</div>
+            <div><b>Note:</b> Please send proof of payment to <a href="mailto:info@chibobec.org">info@chibobec.org</a></div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      &copy; 2025 Chibobec Charity Foundation. All rights reserved.
+    </footer>
+    <!-- Remove Paystack script -->
+    <!-- <script src="https://js.paystack.co/v1/inline.js"></script> -->
+
+    <!-- Add Flutterwave script -->
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script type="module" src="script/donate.js"></script>
+  </body>
+</html>
