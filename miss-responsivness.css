@@ -1,0 +1,387 @@
+@media (max-width: 550px) {
+  .nav-links, .bn {
+    display: none;
+  }
+
+  .logo {
+    margin-left: -1rem;
+  }
+
+  .ham-div {
+    display: flex;
+    margin-left: 0rem;
+    margin-right: -1.3rem;
+  }
+
+  .moving-banner {
+    font-size: 0.2rem;
+    letter-spacing: 0px;
+  }
+
+  .moving-banner span {
+    padding: 0 2px;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    display: block;
+    white-space: wrap;
+    text-align: center;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .moving-banner .banner-emoji {
+    font-size: 1.5em;
+    display: block;
+    width: 70px;
+    margin-left: 9rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero {
+    margin-top: 13.5rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .logo {
+    margin-left: 0;
+    width: 220px;
+    white-space: nowrap;
+    padding: 5px;
+    padding-left: 0;
+    margin-right: -3rem;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  .logo i {
+    margin-top: -0.5rem;
+    margin-left: 3.2rem;
+  }
+
+  .ham-div {
+    display: flex;
+    margin-left: 0rem;
+    margin-right: -1.3rem;
+  }
+
+  .moving-banner span {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    white-space: wrap;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    padding-top: 0.3rem;
+  }
+
+  .moving-banner .banner-emoji {
+    display: none;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 949px) {
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    margin-left: -20px;
+  }
+
+  .moving-banner span {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    white-space: wrap;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    padding-top: 0.3rem;
+  }
+
+  .moving-banner .banner-emoji {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .logo {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+
+  .logo i {
+    margin-top: -0.7rem;
+    margin-left: 3rem;
+  }
+
+  .logo img {
+    margin-left: -0.8rem;
+  }
+
+  .moving-banner span {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    white-space: wrap;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    padding-top: 0.3rem;
+  }
+
+  .moving-banner .banner-emoji {
+    display: none;
+  }
+}
+
+@media (min-width: 1101px) {
+  .logo {
+    margin-right: -0.5rem;
+    width: 225px;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+
+  .moving-banner span {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 24px;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .moving-banner .banner-emoji {
+    font-size: 1.5em;
+    margin-right: 14px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  .no, .bn {
+    display: none;
+  }
+
+  .ham-div {
+    display: flex;
+    margin-left: -2.9rem;
+  }
+
+  .logo {
+    margin-left: -1.5rem;
+  }
+
+  .ac {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1019px) {
+  .no, .bn {
+    display: none;
+  }
+
+  .ham-div {
+    margin-left: -1.5rem;
+    border: 3px solid;
+  }
+
+  .ac {
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width: 1020px) {
+  .logo {
+    margin-left: -1.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .bn {
+    display: none;
+  }
+
+  .ham-div {
+    display: flex;
+  }
+}
+
+@media (min-width: 1130px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .bn {
+    display: flex;
+  }
+
+  .ham-div {
+    display: none;
+  }
+
+  .moving-banner span {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 24px;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .moving-banner .banner-emoji {
+    font-size: 1.5em;
+    margin-right: 14px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+/* BODY RESPONSIVENESS SECTION */
+
+@media (max-width: 1100px) {
+  .section {
+    padding: 0 8px;
+  }
+  .about-flex, .team-flex, .goals-flex, .impact-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-flex img {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  /* Responsive container and section padding */
+  body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .section {
+    padding: 32px 12px;
+    margin: 24px 4px;
+    border-radius: 14px;
+  }
+
+  /* Flex containers responsive */
+  .about-flex, .team-flex, .goals-flex, .impact-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    .about-flex, .team-flex, .goals-flex, .impact-flex {
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  /* Responsive images */
+  .team-card img, .impact-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Team cards responsive */
+  .team-card {
+    flex: 1 1 220px;
+    min-width: 220px;
+    max-width: 320px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 600px) {
+    .team-card {
+      min-width: 90vw;
+      max-width: 98vw;
+      padding: 18px 6px;
+    }
+  }
+
+  /* Impact cards responsive */
+  .impact-card {
+    flex: 1 1 180px;
+    min-width: 160px;
+    max-width: 240px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 600px) {
+    .impact-card {
+      min-width: 90vw;
+      max-width: 98vw;
+      padding: 18px 6px;
+    }
+  }
+
+  /* Gallery row responsive */
+  .about-gallery-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .about-gallery-row img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+  }
+  @media (max-width: 600px) {
+    .about-gallery-row {
+      gap: 6px;
+      justify-content: center;
+    }
+    .about-gallery-row img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  /* Typography responsive */
+  .section h2 {
+    font-size: 2.2rem;
+  }
+  @media (max-width: 600px) {
+    .section h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/* Center team images and content on small screens */
+@media (max-width: 900px) {
+  .team-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .team-card {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .team-card img {
+    margin: 0 auto 18px auto;
+    display: block;
+  }
+}
